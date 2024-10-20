@@ -1,36 +1,41 @@
+<!-- 11. BUTTONS -->
+
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>My first webpage.</title>
   </head>
+
   <body>
-    <h1>
-      <div
-        id="1729394286203"
-        style="
-          width: 100%;
-          max-width: 1290px;
-          height: 725px;
-          margin: auto;
-          display: block;
-          position: relative;
-          border: 2px solid #dee1e5;
-          border-radius: 3px;
-        "
-      >
-        <iframe
-          allow="clipboard-write"
-          allow="autoplay"
-          allowfullscreen="true"
-          allowfullscreen="true"
-          style="width: 100%; height: 100%; border: none"
-          scrolling="yes"
-        ></iframe>
-      </div>
-    </h1>
+
+<!--Adding a button, giving it css styles and adding href to it has been demonstrated below-->
+<!--anything that comes after styles is a css property. -->
+    <button
+      style="
+        color: rgb(34, 255, 255);
+        background-color: rgb(121, 208, 255);
+        border-radius: 5px;
+      "
+    >
+      <a href="GTA V Cinematic Video Midnight City.mp4">
+        Click me to watch "GTA V Cinematic Video Midnight City"
+      </a>
+    </button>
+
+<!--Below is a simple javascript code demonstrating the use of a button.-->
+<!--When you click "Hello" button the hello text will change to goodbye -->      <button
+    onclick="doSomething()">Hello    
+    </button>
+
+
+<p id="test">Hello</p>
+<script>
+ function doSomething(){
+    document.getElementById("test").innerHTML = "Goodbye";
+}
+</script>
+
+    </p>
   </body>
 </html>
